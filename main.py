@@ -18,8 +18,8 @@ clock = pygame.time.Clock()
 explosion_animation = pyganim.PygAnimation([('image/explosion/{}.png'.format(i), 100) for i in range(3)], loop=False)
 
 #фоновый звук
-#music = pygame.mixer.Sound('tracks/1.wav')
-#music.play(-1) #-1 музыка играет всё время
+music = pygame.mixer.Sound('tracks/1.wav')
+music.play(-1) #-1 музыка играет всё время
  
 #отдельная группа для плазмоидов
 plasmoids = pygame.sprite.Group()
